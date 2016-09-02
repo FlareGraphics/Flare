@@ -9,15 +9,15 @@ FIND_PATH( GLEW_INCLUDE_DIRS GL/glew.h
     /opt/X11/include
     /opt/include 
     # FOR WINDOWS
-    ${CMAKE_SOURCE_DIR}/external/glew/include)
+    ${CMAKE_SOURCE_DIR}/libs/glew/include)
 
 if(WIN32)
     IF( CMAKE_SIZEOF_VOID_P EQUAL 8 )
         SET(GLEWLIBNAME glew64)
-		SET(WINLIBPATH ${CMAKE_SOURCE_DIR}/external/glew/lib/x64)
+		SET(WINLIBPATH ${CMAKE_SOURCE_DIR}/libs/glew/lib/x64)
     ELSE()
         SET(GLEWLIBNAME glew32s)
-		SET(WINLIBPATH ${CMAKE_SOURCE_DIR}/external/glew/lib/win32)
+		SET(WINLIBPATH ${CMAKE_SOURCE_DIR}/libs/glew/lib/win32)
     ENDIF()
 else()
     # IMPORTANT: uppercase otherwise problem on linux
