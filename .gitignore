@@ -29,6 +29,9 @@
 *.app
 waves
 
+# Cmake
+compile_commands.json
+
 # Vim
 *.swp
 
