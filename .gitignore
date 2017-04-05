@@ -37,3 +37,6 @@ waves
 
 # CLion
 .idea/*
+
+# Build folder
+/build
